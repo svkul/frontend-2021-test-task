@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+<body>
+  <h2>Pandemic maps:</h2>
+
+  <p class="pre">
+    0 - uninfected;
+    1 - infected;
+    Х - ocean;
+  </p>
+
+  <p>XX0X10010X000X010X0</p>
+
+  <p>01000000X000X011X0X</p>
+
+  <input
+    class="input"
+    type="text"
+    placeholder="Enter pandemic map"
+    data-input-map
+  >
+
+  <button
+    class="button"
+    type="button"
+    data-run-forecast
+  >Get pandemic forecast</button>
+
+  <div data-result></div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
