@@ -45,9 +45,9 @@ var pandemicForecast = (function() {
 
   function paintResult(input) {
     if(input.value) {
-      if(/^[X10]+$/g.test(input.value)){
-        const pandemicForecast = getPandemicForecast(input.value)
-        const wordMapBefore = getWordMap(input.value);
+      if(/^[X10]+$/g.test(input.value)) {
+        const pandemicForecast = getPandemicForecast(input.value);
+        const wordMapBefore = getWordMap(pandemicForecast.mapBefore);
         const wordMapAfter = getWordMap(pandemicForecast.mapAfter);
         
         result.innerHTML = `

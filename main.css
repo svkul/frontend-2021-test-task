@@ -1,10 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #414141;
   font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-shadow: 0 0 2px #ccc;
 }
 
 .input {
   padding: .5rem;
-  border: 1px solid #ccc;
+  border: none;
   font-size: 1.1rem;
   outline: none;
 }
@@ -12,7 +28,7 @@ body {
 .button {
   padding: .5rem;
   color: #fff;
-  background-color: #03a9f4;
+  background-color: #8bc24c;
   border: none;
   font-size: 1.1rem;
   cursor: pointer;
@@ -20,7 +36,8 @@ body {
 }
 
 .pre {
-  margin: 0;
+  margin: 0 0 1rem;
+  font-size: .8rem;
 }
 
 .button:hover {
